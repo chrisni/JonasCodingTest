@@ -16,6 +16,8 @@ namespace WebApi
             CreateMap<BaseInfo, BaseDto>();
             CreateMap<CompanyInfo, CompanyDto>();
             CreateMap<ArSubledgerInfo, ArSubledgerDto>();
+            CreateMap<EmployeeInfo, EmployeeDto>();
         }
+
     }
 }

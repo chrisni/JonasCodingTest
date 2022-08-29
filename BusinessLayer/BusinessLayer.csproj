@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +47,7 @@
     <Compile Include="BusinessProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CompanyService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer.Model\BusinessLayer.Model.csproj">
@@ -56,9 +60,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AutoMapper">
-      <Version>7.0.1</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
